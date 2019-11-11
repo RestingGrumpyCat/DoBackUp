@@ -2,11 +2,11 @@
 
 #Student Name: Shiyu Wang
 
-#This script outputs all subdirectories of the current working directory, also provide users with options to make archive of each subdirectory.
+#This script outputs all subdirectories of the current working directory, also provide users with an option to make archive of each subdirectory.
 
 
 if [ -z "$(ls -d */)" ]; then #error checking for if any subdirectory exists in current working directory
-        echo "Error: No directories in current wotking directory. "
+        echo "Error: No directories in current working directory. "
 else
 
         
@@ -22,7 +22,7 @@ else
         done
 
 	
-        read -p "Backup which directory? (0 to exit): " directory #read input from user for which subdirectory to make marchive of
+        read -p "Backup which directory? (0 to exit): " directory #read input from user for which subdirectory to make archive of
 
 
 	while [ "$director" != " " ] ; do #as long as there is input 
